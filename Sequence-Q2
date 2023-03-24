@@ -1,0 +1,30 @@
+/*  Question 2
+*   Calculate and display the velocity of a car if velocity is equal to distance divided by time taken.
+*   Display “Over Speed Limit” if velocity exceeded 110 km/h.*/
+
+import java.util.Scanner; 
+public class Day2 
+{ 
+    public static void main (String[]args) 
+    { 
+        Scanner akmal = new Scanner(System.in); 
+         
+        double distance , timeTaken, velocity; 
+         
+        System.out.print("Enter distance (m): " ); 
+        distance = akmal.nextDouble(); 
+        System.out.print("Enter time taken (s): "); 
+        timeTaken = akmal.nextDouble(); 
+         
+        velocity = distance / timeTaken;
+        
+        System.out.println("Your velocity is " + velocity + "m/s"); 
+        
+        if ( velocity >= 110)
+            System.out.println("Over Speed Limit"); 
+
+         
+         
+         
+    } 
+}
