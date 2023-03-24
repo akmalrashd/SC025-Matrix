@@ -1,0 +1,42 @@
+/*  Question 1 Array
+*   An Nur Care Center charges for monthly caring services based on a child’s age. Charges for
+*   a child age less than 24 months is RM220 per month, for child from 2 to 4 years old is RM 180
+*   per month and for a child above 4 years old is RM150 per month respectively. Assume they
+*   are n children currently at An Nur Care Center. Given n children names and ages, detemine
+*   the monthly charge for each child.  */
+
+import java.util.Scanner;
+
+public class Day32
+{
+  public static void main(String args[])
+  { 
+   Scanner akmal = new Scanner(System.in);
+   
+    int n , age;
+    String name;
+    double charges ;
+    
+    System.out.print("Enter number of children: ");
+    n = akmal.nextInt();
+    
+    for (int c=0 ; c<n ; c++)
+    {
+      System.out.print("Enter Name of child "+ (c+1) +": ");
+      name = akmal.next();
+      System.out.print("Enter Age of child "+ (c+1) +" (Years Old): ");
+      age = akmal.nextInt();
+      
+      if (age < 2)
+        charges = 220;
+      else if (age >= 2 && age <= 4)
+        charges = 180;
+      else
+        charges = 150;
+        
+      System.out.println("Charge for child named "+ name + " : RM"+ charges);
+      
+    }
+    
+  }
+}
