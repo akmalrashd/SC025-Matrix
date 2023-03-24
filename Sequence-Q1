@@ -1,0 +1,28 @@
+/*  Question 1
+*   Calculator that allow user to perform multiplication and division of two numbers. Prompt user
+*   to input and display the output.*/
+
+import java.util.Scanner; 
+public class Day1 
+{ 
+    public static void main (String[]args) 
+    { 
+        Scanner akmal = new Scanner(System.in); 
+         
+        double num1, num2, multiplication , division ; 
+         
+        System.out.print("Enter 1st number: " ); 
+        num1 = akmal.nextDouble(); 
+        System.out.print("Enter 2nd number: "); 
+        num2 = akmal.nextDouble(); 
+         
+        multiplication = num1 * num2; 
+        division = num1 / num2; 
+         
+        System.out.println("Total of multiplication of two numbers: "+ multiplication); 
+        System.out.print("Total of division of two numbers: " + division); 
+         
+         
+         
+    } 
+}
